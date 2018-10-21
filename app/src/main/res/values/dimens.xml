@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="sixteen_dp">16dp</dimen>
+    <dimen name="divider_view_width">1dp</dimen>
+    <dimen name="team_text_size">24sp</dimen>
+    <dimen name="score_text_size">60sp</dimen>
+    <dimen name="divider_view_bottom_margin">100dp</dimen>
+    <dimen name="reset_bottom_margin">28dp</dimen>
+    <item name="alpha_value" format="float" type="dimen">0.8</item>
+    <item name="weight_ll" format="integer" type="dimen">1</item>
+</resources>
