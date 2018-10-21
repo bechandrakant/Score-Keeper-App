@@ -6,14 +6,14 @@
     android:background="@drawable/game"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="@dimen/zero_dp"
@@ -141,11 +141,10 @@
             android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="@dimen/reset_bottom_margin"
             android:background="@color/colorPrimary"
             android:text="@string/reset"
             android:textColor="@color/white" />
-    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>
