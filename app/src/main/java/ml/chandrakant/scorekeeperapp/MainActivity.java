@@ -118,4 +118,21 @@ public class MainActivity extends AppCompatActivity {
     private void updateTeamBScore(int teamBPoints) {
         teamBScore.setText(teamBPoints + "");
     }
+
+    /* Handling orientation changes */
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("teamAScore", teamAPoints);
+        outState.putInt("teamBScore", teamBPoints);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        teamAPoints = savedInstanceState.getInt("teamAScore");
+        teamBPoints = savedInstanceState.getInt("teamBScore");
+        updateTeamAScore(teamAPoints);
+        updateTeamBScore(teamBPoints);
+    }
 }
